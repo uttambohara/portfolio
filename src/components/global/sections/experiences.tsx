@@ -22,7 +22,7 @@ export default function Experiences() {
 
     tl.from(".experience-list", {
       opacity: 0,
-      x: 100,
+      x: -20,
       stagger: 0.5,
       ease: "sign.in",
     });
