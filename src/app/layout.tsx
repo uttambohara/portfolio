@@ -10,6 +10,9 @@ const inter = M_PLUS_1p({
 export const metadata: Metadata = {
   title: "Uttam Bohara",
   description: "Portfolio site of Uttam Bohara. | me",
+  icons: {
+    icon: "/uttam.png",
+  },
 };
 
 export default function RootLayout({
