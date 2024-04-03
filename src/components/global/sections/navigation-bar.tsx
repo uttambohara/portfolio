@@ -38,7 +38,7 @@ export default function NavigationBar() {
       </div>
 
       <nav>
-        <ul className="flex gap-2 max-lg:gap-4 max-lg:text-sm max-md:hidden">
+        <ul className="flex gap-2 max-lg:hidden max-lg:gap-4 max-lg:text-sm">
           {NavigationItem.map((item) => (
             <Link href={item.href} className="p-1" key={item.id}>
               <li>{item.name}</li>
@@ -52,11 +52,10 @@ export default function NavigationBar() {
           <div className="relative top-0 text-green-700">
             <div className="animate-green h-3 w-3 rounded-full bg-green-300" />
           </div>
-
           <div>Available</div>
         </div>
 
-        <div className="hidden max-md:block">
+        <div className="hidden max-lg:block">
           <Sheet>
             <SheetTrigger>
               <Menu />

@@ -29,7 +29,7 @@ export default function Works() {
   });
 
   return (
-    <section className="relative h-[80vh] overflow-scroll bg-black" id="works">
+    <section className="relative bg-black" id="works">
       <div className="works-container | container space-y-8 py-32">
         <h2 className="text-3xl">I have developed</h2>
 
