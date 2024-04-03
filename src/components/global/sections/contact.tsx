@@ -22,9 +22,7 @@ export default function Contact() {
         <div>
           <div className="mb-8">
             <h2 className="mb-3 text-3xl">Find me through</h2>
-            <p>
-              You can also contact me via my email "boharauttam2@gmail.com".
-            </p>
+            <p>You can also contact me via my email boharauttam2@gmail.com.</p>
           </div>
 
           <div>
