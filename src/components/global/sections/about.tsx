@@ -49,8 +49,12 @@ export default function About() {
             </div>
           </div>
 
-          <a target="_blank" href="https://github.com/uttambohara">
-            <div className="about-image | group relative h-[20rem] w-full overflow-hidden">
+          <a
+            target="_blank"
+            href="https://github.com/uttambohara"
+            className="about-image | group relative h-[20rem] w-full overflow-hidden"
+          >
+            <div>
               <Image
                 src={"/about.png"}
                 alt="About image"

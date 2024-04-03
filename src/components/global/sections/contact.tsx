@@ -31,7 +31,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="absolute left-1/2 top-10 h-[12rem] w-[12rem] -translate-x-[50%] rounded-full bg-purple-700 blur-[7rem]" />
+      <div className="absolute left-1/2 top-10 h-[16rem] w-[16rem] -translate-x-[50%] rounded-full bg-purple-700/30 blur-[9rem]" />
     </section>
   );
 }

@@ -60,7 +60,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute top-0 h-[12rem] w-[12rem] rounded-full bg-purple-700 blur-[7rem]" />
+      <div className="absolute top-0 h-[12rem] w-[12rem] rounded-full bg-purple-700/30 blur-[9rem]" />
     </section>
   );
 }

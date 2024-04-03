@@ -38,7 +38,7 @@ export default function Works() {
             <Link key={work.id} href={work.projectLink}>
               <li
                 className={cn(
-                  "work-item | group flex items-center transition-all hover:-rotate-2 hover:scale-105 hover:cursor-pointer max-sm:flex-col-reverse md:flex-row",
+                  "work-item | ease group flex items-center transition-all hover:-rotate-2 hover:scale-105 hover:cursor-pointer max-sm:flex-col-reverse md:flex-row",
                   index !== WorksData.length - 1 &&
                     "border-b border-slate-100/20",
                 )}
@@ -95,8 +95,8 @@ export default function Works() {
         </ul>
       </div>
 
-      <div className="absolute bottom-0 right-0 h-[32rem] w-[12rem] bg-purple-700/30 blur-[9rem]" />
-      <div className="absolute left-0 top-0 h-[32rem] w-[12rem] bg-purple-700/30 blur-[9rem]" />
+      <div className="absolute bottom-0 right-0 h-[6rem] w-[6rem] bg-purple-700/30 blur-[9rem]" />
+      <div className="absolute left-0 top-0 h-[6rem] w-[6rem] bg-purple-700/30 blur-[9rem]" />
     </section>
   );
 }
