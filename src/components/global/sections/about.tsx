@@ -49,13 +49,13 @@ export default function About() {
             </div>
           </div>
 
-          <div className="about-image | relative h-[20rem] w-full">
+          <div className="about-image | group relative h-[20rem] w-full overflow-hidden">
             <Image
               src={"/about.png"}
               alt="About image"
               fill
               priority
-              className="object-cover"
+              className="object-cover object-[-2rem] transition-all group-hover:scale-110"
             />
           </div>
         </div>

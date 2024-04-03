@@ -71,11 +71,11 @@ export default function NavigationBar() {
               </div>
 
               <nav>
-                <ul className="flex flex-col items-center gap-4">
+                <ul className="flex flex-col gap-4">
                   {NavigationItem.map((item) => (
                     <SheetClose key={item.id} asChild>
-                      <Link href={item.href}>
-                        <li>{item.name}</li>
+                      <Link href={item.href} className="p-1">
+                        <li className="text-xl">{item.name}</li>
                       </Link>
                     </SheetClose>
                   ))}
