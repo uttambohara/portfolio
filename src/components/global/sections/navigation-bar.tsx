@@ -50,9 +50,11 @@ export default function NavigationBar() {
 
         <ul className="flex items-center gap-4 max-md:hidden">
           {SocialMediaIcon.map((icon) => (
-            <li key={icon.id}>
-              <icon.icon />
-            </li>
+            <a key={icon.id} href={icon.href} target="_blank">
+              <li key={icon.id}>
+                <icon.icon />
+              </li>
+            </a>
           ))}
         </ul>
       </div>

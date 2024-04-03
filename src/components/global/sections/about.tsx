@@ -27,7 +27,7 @@ export default function About() {
   });
   return (
     <section className="text-black" id="about">
-      <div className="container py-32">
+      <div className="container pt-32 sm:pb-32">
         <div className="flex items-center gap-8 max-sm:flex-col">
           <div className="about-content | space-y-4">
             <h2 className="text-3xl">I am thrilled for my introduction.</h2>

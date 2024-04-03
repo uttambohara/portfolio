@@ -13,6 +13,7 @@ export const WorksData = [
     iconLink: "/work-1.svg",
     wesiteImageUrl: "/work-website-1.png",
     completed: false,
+    projectLink: "",
   },
   {
     id: "2",
@@ -23,6 +24,7 @@ export const WorksData = [
     iconLink: "/work-2.svg",
     wesiteImageUrl: "/work-website-2.png",
     completed: false,
+    projectLink: "",
   },
 ];
 
@@ -30,10 +32,12 @@ export const SocialMediaIcon = [
   {
     id: "1",
     icon: FaLinkedin,
+    href: "https://www.linkedin.com/in/uttam-bohara-a6b059271/",
   },
   {
     id: "2",
     icon: FaGithub,
+    href: "https://github.com/uttambohara",
   },
 ];
 

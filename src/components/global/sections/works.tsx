@@ -5,6 +5,8 @@ import { useGSAP } from "@gsap/react";
 import Image from "next/image";
 
 import gsap, { ScrollTrigger } from "gsap/all";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Works() {
@@ -30,50 +32,54 @@ export default function Works() {
         <h2 className="text-3xl">I have developed</h2>
 
         <ul className="group space-y-10">
-          {WorksData.map((work) => (
-            <li
-              key={work.id}
-              className="work-item | group flex items-center transition-all hover:scale-105  hover:cursor-pointer max-sm:flex-col-reverse md:flex-row"
-            >
-              <div className="max-w-[50rem] space-y-4 px-6 py-4">
-                <div className="flex items-center gap-4">
-                  <div className="relative h-8 w-8">
+          {WorksData.map((work, index) => (
+            <Link key={work.id} href={work.projectLink}>
+              <li
+                className={cn(
+                  "work-item | group flex items-center transition-all hover:-rotate-2 hover:scale-105 hover:cursor-pointer max-sm:flex-col-reverse md:flex-row",
+                  index === 0 && "border-b border-slate-100/20",
+                )}
+              >
+                <div className="max-w-[50rem] space-y-4 px-6 py-4">
+                  <div className="flex items-center gap-4">
+                    <div className="relative h-8 w-8">
+                      <Image
+                        src={work.iconLink}
+                        fill
+                        priority
+                        className="object-cover"
+                        alt="Work one"
+                      />
+                    </div>
+                    <h2 className="text-xl">{work.title}</h2>
+                  </div>
+
+                  <div className="flex items-center gap-2">
+                    {work.stack.map((Icon, index) => (
+                      <div key={index}>
+                        <Icon />
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-sm font-light leading-7">
+                    {work.description}
+                  </p>
+                </div>
+
+                <div className="flex h-full w-[20rem] justify-center p-6 sm:w-[30rem]">
+                  {" "}
+                  <div className="relative h-[12rem] w-full">
                     <Image
-                      src={work.iconLink}
+                      src={work.wesiteImageUrl}
+                      alt={work.title}
                       fill
                       priority
                       className="object-cover"
-                      alt="Work one"
                     />
                   </div>
-                  <h2 className="text-xl">{work.title}</h2>
                 </div>
-
-                <div className="flex items-center gap-2">
-                  {work.stack.map((Icon, index) => (
-                    <div key={index}>
-                      <Icon />
-                    </div>
-                  ))}
-                </div>
-                <p className="text-sm font-light leading-7">
-                  {work.description}
-                </p>
-              </div>
-
-              <div className="flex h-full w-[20rem] justify-center p-6 sm:w-[30rem]">
-                {" "}
-                <div className="relative h-[12rem] w-full">
-                  <Image
-                    src={work.wesiteImageUrl}
-                    alt={work.title}
-                    fill
-                    priority
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            </li>
+              </li>
+            </Link>
           ))}
         </ul>
       </div>

@@ -26,17 +26,25 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap items-center gap-3">
-            <Button className="group  active:-translate-y-1">
-              <span>Contact me here</span>
-              <ArrowRight className="transition-all group-hover:translate-x-1 group-hover:scale-110" />
-            </Button>
-            <Button
-              variant={"secondary"}
-              className="group  active:-translate-y-1"
+            <a href="#contact">
+              <Button className="group  active:-translate-y-1">
+                <span>Contact me here</span>
+                <ArrowRight className="transition-all group-hover:translate-x-1 group-hover:scale-110" />
+              </Button>
+            </a>
+
+            <a
+              href="https://docs.google.com/document/d/1ZBI36wEEeeJnOlX89aGq17eDBVFmxFuaZOugnv7qMf4/edit#heading=h.le7oimcbka0a"
+              target="_blank"
             >
-              Download CV
-              <Download className="transition-all group-hover:-translate-y-1 group-hover:scale-110" />
-            </Button>
+              <Button
+                variant={"secondary"}
+                className="group  active:-translate-y-1"
+              >
+                Download CV
+                <Download className="transition-all group-hover:-translate-y-1 group-hover:scale-110" />
+              </Button>
+            </a>
           </div>
         </div>
       </div>

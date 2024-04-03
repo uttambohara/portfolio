@@ -48,7 +48,11 @@ export function ContactForm() {
             <FormItem>
               <FormLabel>Title</FormLabel>
               <FormControl>
-                <Input placeholder="Message title" {...field} />
+                <Input
+                  placeholder="Message title"
+                  {...field}
+                  className="text-zinc-600"
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -61,7 +65,11 @@ export function ContactForm() {
             <FormItem>
               <FormLabel>Description</FormLabel>
               <FormControl>
-                <Textarea placeholder="Message title" {...field} />
+                <Textarea
+                  placeholder="Message title"
+                  {...field}
+                  className="text-zinc-600"
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
