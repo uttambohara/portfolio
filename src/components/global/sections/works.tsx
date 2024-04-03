@@ -29,7 +29,7 @@ export default function Works() {
   });
 
   return (
-    <section className="relative bg-black" id="works">
+    <section className="relative h-[80vh] overflow-scroll bg-black" id="works">
       <div className="works-container | container space-y-8 py-32">
         <h2 className="text-3xl">I have developed</h2>
 
@@ -95,8 +95,7 @@ export default function Works() {
         </ul>
       </div>
 
-      <div className="absolute bottom-0 right-0 h-[6rem] w-[6rem] bg-purple-700/30 blur-[9rem]" />
-      <div className="absolute left-0 top-0 h-[6rem] w-[6rem] bg-purple-700/30 blur-[9rem]" />
+      <div className="absolute left-0 top-0 h-[10rem] w-[10rem] bg-purple-700/30 blur-[9rem]" />
     </section>
   );
 }
