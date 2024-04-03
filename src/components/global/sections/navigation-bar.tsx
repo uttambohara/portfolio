@@ -10,7 +10,7 @@ import {
 import { NavigationItem, SocialMediaIcon } from "@/lib/constant";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { Menu } from "lucide-react";
+import { Github, LinkedinIcon, Menu } from "lucide-react";
 import Link from "next/link";
 
 export default function NavigationBar() {
@@ -37,6 +37,16 @@ export default function NavigationBar() {
         <p className="text-sm text-muted-foreground">Aspiring developer</p>
       </div>
 
+      <nav>
+        <ul className="flex gap-2 max-lg:gap-4 max-lg:text-sm max-md:hidden">
+          {NavigationItem.map((item) => (
+            <Link href={item.href} className="p-1" key={item.id}>
+              <li>{item.name}</li>
+            </Link>
+          ))}
+        </ul>
+      </nav>
+
       <div className="flex items-center gap-4">
         <div className="flex items-center gap-3">
           <div className="relative top-0 text-green-700">
@@ -51,25 +61,26 @@ export default function NavigationBar() {
             <SheetTrigger>
               <Menu />
             </SheetTrigger>
-            <SheetContent className="space-y-6">
+            <SheetContent className="w-[300px] space-y-6 bg-[#f7f6f5]">
               <div className="space-y-3">
                 <SheetTitle className="text-3xl">Navigate</SheetTitle>
                 <SheetDescription>
-                  User this sidebar to navigate in mobile devices.
-                  <ul className="flex items-center gap-4 max-md:hidden">
-                    {SocialMediaIcon.map((icon) => (
-                      <a key={icon.id} href={icon.href} target="_blank">
-                        <li key={icon.id}>
-                          <icon.icon />
-                        </li>
-                      </a>
-                    ))}
-                  </ul>
+                  <div className="flex gap-4">
+                    <a href="https://github.com/uttambohara" target="_blank">
+                      <Github />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/uttam-bohara-a6b059271/"
+                      target="_blank"
+                    >
+                      <LinkedinIcon />
+                    </a>
+                  </div>
                 </SheetDescription>
               </div>
 
               <nav>
-                <ul className="flex flex-col gap-4">
+                <ul className="flex flex-col gap-2">
                   {NavigationItem.map((item) => (
                     <SheetClose key={item.id} asChild>
                       <Link href={item.href} className="p-1">
