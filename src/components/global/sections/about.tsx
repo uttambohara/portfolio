@@ -49,15 +49,17 @@ export default function About() {
             </div>
           </div>
 
-          <div className="about-image | group relative h-[20rem] w-full overflow-hidden">
-            <Image
-              src={"/about.png"}
-              alt="About image"
-              fill
-              priority
-              className="object-cover object-[-2rem] transition-all group-hover:scale-110"
-            />
-          </div>
+          <a target="_blank" href="https://github.com/uttambohara">
+            <div className="about-image | group relative h-[20rem] w-full overflow-hidden">
+              <Image
+                src={"/about.png"}
+                alt="About image"
+                fill
+                priority
+                className="object-cover object-[-2rem] transition-all group-hover:scale-110"
+              />
+            </div>
+          </a>
         </div>
       </div>
     </section>

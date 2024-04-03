@@ -22,7 +22,7 @@ export default function Hero() {
           </h1>
           <p className="leading-8">
             Hello! I am a full stack developer with 1.5 years of experience. I
-            enjoy build web apps and websites. My expertise is on NextJs,
+            enjoy building web apps and websites. My expertise is on NextJs,
             Typescript, and React.
           </p>
 

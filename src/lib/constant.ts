@@ -99,7 +99,7 @@ export const NavigationItem = [
 export const experiencesData = [
   {
     id: 0,
-    date: "February 2023",
+    date: "Upto february 2023",
     heading: "IELTS Instructor",
     expList: [
       "I worked as an IELTS instructor at Edupark Consultancy from 2018 to 2023.",
