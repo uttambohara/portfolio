@@ -5,7 +5,7 @@ body {
   @apply !overflow-x-hidden;
 }
 .container {
-  @apply mx-auto max-w-[900px] px-12;
+  @apply mx-auto max-w-[900px] px-12 max-sm:px-6;
 }
 
 @layer base {

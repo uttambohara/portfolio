@@ -18,7 +18,7 @@ export default function Contact() {
   });
   return (
     <section className="relative bg-black" id="contact">
-      <div className="contact-container | mx-auto max-w-screen-sm px-6 py-32">
+      <div className="contact-container | mx-auto max-w-screen-sm px-12 py-32">
         <div>
           <div className="mb-8">
             <h2 className="mb-3 text-3xl">Find me through</h2>
