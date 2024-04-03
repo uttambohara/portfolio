@@ -7,6 +7,8 @@ import Image from "next/image";
 import gsap, { ScrollTrigger } from "gsap/all";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Works() {
@@ -31,7 +33,7 @@ export default function Works() {
       <div className="works-container | container space-y-8 py-32">
         <h2 className="text-3xl">I have developed</h2>
 
-        <ul className="group space-y-10">
+        <ul className="group relative space-y-10">
           {WorksData.map((work, index) => (
             <Link key={work.id} href={work.projectLink}>
               <li
@@ -41,7 +43,15 @@ export default function Works() {
                     "border-b border-slate-100/20",
                 )}
               >
-                <div className="max-w-[50rem] space-y-4 px-6 py-4">
+                <div className="| group max-w-[50rem] space-y-4 px-6 py-4">
+                  {!work.completed && (
+                    <Button
+                      variant={"link"}
+                      className="font-extralight text-zinc-600 decoration-[#c9bb94] transition-all group-hover:underline group-hover:underline-offset-4"
+                    >
+                      Currently Working
+                    </Button>
+                  )}
                   <div className="flex items-center gap-4">
                     <div className="relative h-8 w-8">
                       <Image

@@ -4,7 +4,6 @@ import {
   SheetClose,
   SheetContent,
   SheetDescription,
-  SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
@@ -38,16 +37,6 @@ export default function NavigationBar() {
         <p className="text-sm text-muted-foreground">Aspiring developer</p>
       </div>
 
-      <nav className="max-lg:text-sm max-md:hidden">
-        <ul className="flex items-center gap-6 max-lg:gap-3">
-          {NavigationItem.map((item) => (
-            <Link key={item.id} href={item.href}>
-              <li>{item.name}</li>
-            </Link>
-          ))}
-        </ul>
-      </nav>
-
       <div className="flex items-center gap-4">
         <div className="flex items-center gap-3">
           <div className="relative top-0 text-green-700">
@@ -67,6 +56,15 @@ export default function NavigationBar() {
                 <SheetTitle className="text-3xl">Navigate</SheetTitle>
                 <SheetDescription>
                   User this sidebar to navigate in mobile devices.
+                  <ul className="flex items-center gap-4 max-md:hidden">
+                    {SocialMediaIcon.map((icon) => (
+                      <a key={icon.id} href={icon.href} target="_blank">
+                        <li key={icon.id}>
+                          <icon.icon />
+                        </li>
+                      </a>
+                    ))}
+                  </ul>
                 </SheetDescription>
               </div>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { SocialMediaIcon } from "@/lib/constant";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap/all";
 import { ArrowRight, Download } from "lucide-react";
@@ -45,6 +46,16 @@ export default function Hero() {
                 <Download className="transition-all group-hover:-translate-y-1 group-hover:scale-110" />
               </Button>
             </a>
+
+            <ul className="flex items-center gap-4">
+              {SocialMediaIcon.map((icon) => (
+                <a key={icon.id} href={icon.href} target="_blank">
+                  <li key={icon.id}>
+                    <icon.icon />
+                  </li>
+                </a>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

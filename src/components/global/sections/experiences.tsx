@@ -44,7 +44,7 @@ export default function Experiences() {
               <div className="absolute -left-8 top-5 h-4 w-4 rounded-full bg-[#c9bb94]" />
               <span className="text-sm text-slate-400">{experience.date}</span>
               <h2 className="text-xl text-slate-500">{experience.heading}</h2>
-              <div>
+              <div className="space-y-3">
                 {experience.expList.map((list) => (
                   <div key={list} className="text-slate-400">
                     {list}
