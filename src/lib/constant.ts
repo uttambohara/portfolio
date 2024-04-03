@@ -20,7 +20,7 @@ export const WorksData = [
     title: "NextAuth",
     stack: [SiTypescript, TbBrandNextjs, SiPrisma],
     description:
-      "Auth implementaion using NextAuth. Implemented signin, singup, token verification, two factor authenticaiton.",
+      "Auth implementaion using NextAuth. Implemented signin, signup, token verification, two factor authenticaiton.",
     iconLink: "/work-3.png",
     wesiteImageUrl: "/work-website-3.png",
     completed: true,
