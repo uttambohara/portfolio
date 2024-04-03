@@ -1,8 +1,17 @@
 "use client";
-
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import { NavigationItem, SocialMediaIcon } from "@/lib/constant";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { Menu } from "lucide-react";
 import Link from "next/link";
 
 export default function NavigationBar() {
@@ -29,8 +38,8 @@ export default function NavigationBar() {
         <p className="text-sm text-muted-foreground">Aspiring developer</p>
       </div>
 
-      <nav className="max-md:hidden">
-        <ul className="flex items-center gap-6">
+      <nav className="max-lg:text-sm max-md:hidden">
+        <ul className="flex items-center gap-6 max-lg:gap-3">
           {NavigationItem.map((item) => (
             <Link key={item.id} href={item.href}>
               <li>{item.name}</li>
@@ -46,6 +55,34 @@ export default function NavigationBar() {
           </div>
 
           <div>Available</div>
+        </div>
+
+        <div className="hidden max-md:block">
+          <Sheet>
+            <SheetTrigger>
+              <Menu />
+            </SheetTrigger>
+            <SheetContent className="space-y-6">
+              <div className="space-y-3">
+                <SheetTitle className="text-3xl">Navigate</SheetTitle>
+                <SheetDescription>
+                  User this sidebar to navigate in mobile devices.
+                </SheetDescription>
+              </div>
+
+              <nav>
+                <ul className="flex flex-col items-center gap-4">
+                  {NavigationItem.map((item) => (
+                    <SheetClose key={item.id} asChild>
+                      <Link href={item.href}>
+                        <li>{item.name}</li>
+                      </Link>
+                    </SheetClose>
+                  ))}
+                </ul>
+              </nav>
+            </SheetContent>
+          </Sheet>
         </div>
 
         <ul className="flex items-center gap-4 max-md:hidden">

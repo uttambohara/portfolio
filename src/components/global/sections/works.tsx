@@ -37,7 +37,8 @@ export default function Works() {
               <li
                 className={cn(
                   "work-item | group flex items-center transition-all hover:-rotate-2 hover:scale-105 hover:cursor-pointer max-sm:flex-col-reverse md:flex-row",
-                  index === 0 && "border-b border-slate-100/20",
+                  index !== WorksData.length - 1 &&
+                    "border-b border-slate-100/20",
                 )}
               >
                 <div className="max-w-[50rem] space-y-4 px-6 py-4">

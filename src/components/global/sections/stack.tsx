@@ -29,7 +29,7 @@ export default function Stack() {
   });
 
   return (
-    <section className="bg-[#c9bb94]/10 text-center text-black">
+    <section className="bg-[#c9bb94]/10 text-center text-black" id="stack">
       <div className="container py-24">
         <h2 className="mb-8 text-3xl">Language I speak</h2>
         <div className="stacks | flex flex-wrap justify-center gap-4 text-5xl">
