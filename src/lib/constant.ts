@@ -112,7 +112,7 @@ export const experiencesData = [
     heading: "IELTS Instructor - Edupark Asia",
     expList: [
       "Worked as an IELTS instructor at Edupark Asia Consultancy (2018-2023), developing strong communication and problem-solving skills.",
-      "I also gained valuable experience in admissions, overseas education, and migration services. This experience motivated me to pursue web development for a more engaging career.",
+      "I also gained valuable experience in Admissions Overseas education, and migration services. This experience motivated me to pursue web development for a more engaging career.",
     ],
   },
   {
