@@ -46,7 +46,7 @@ export default function Experiences() {
               <h2 className="text-xl text-slate-500">{experience.heading}</h2>
               <ul className="space-y-3">
                 {experience.expList.map((list) => (
-                  <li key={list} className="list-disc text-slate-400">
+                  <li key={list} className="text-slate-400">
                     {list}
                   </li>
                 ))}
