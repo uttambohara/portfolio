@@ -13,7 +13,14 @@ export default function Hero() {
     });
   });
   return (
-    <section className="relative bg-black">
+    <section className="relative h-full w-full">
+      {/* <div className="absolute bottom-0 left-[-20%] right-0 top-[10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
+      <div className="absolute bottom-0 right-[-20%] top-[10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div> */}
+
+      <div className="absolute top-0 -z-10 h-full w-full bg-black">
+        <div className="absolute -top-10 bottom-auto left-0 h-[500px] w-[500px] -translate-x-[30%]  rounded-full bg-[rgba(173,109,244,0.5)] opacity-30 blur-[80px]"></div>
+      </div>
+
       <div className="container relative py-32 pt-[9rem] sm:pt-[11rem]">
         <div className="hero-content | space-y-8">
           <h1 className="text-5xl tracking-wide max-md:text-4xl">
@@ -59,8 +66,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      <div className="absolute top-0 h-[12rem] w-[12rem] rounded-full bg-purple-700/30 blur-[9rem]" />
     </section>
   );
 }

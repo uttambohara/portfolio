@@ -35,25 +35,25 @@ export default function Experiences() {
       >
         <h2 className="mb-12 text-3xl text-zinc-600">My Experiences</h2>
 
-        <div className="experience-box | space-y-8 border-l-2 border-[#a65036]/30 pl-6 ">
+        <ul className="experience-box | space-y-8 border-l-2 border-[#a65036]/30 pl-6 ">
           {experiencesData.map((experience) => (
-            <div
+            <li
               key={experience.id}
               className="experience-list | relative space-y-1"
             >
               <div className="absolute -left-8 top-5 h-4 w-4 rounded-full bg-[#c9bb94]" />
               <span className="text-sm text-slate-400">{experience.date}</span>
               <h2 className="text-xl text-slate-500">{experience.heading}</h2>
-              <div className="space-y-3">
+              <ul className="space-y-3">
                 {experience.expList.map((list) => (
-                  <div key={list} className="text-slate-400">
+                  <li key={list} className="list-disc text-slate-400">
                     {list}
-                  </div>
+                  </li>
                 ))}
-              </div>
-            </div>
+              </ul>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );
