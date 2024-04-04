@@ -111,7 +111,7 @@ export const experiencesData = [
     date: "2019 to February 2023",
     heading: "IELTS Instructor",
     expList: [
-      "I worked as an IELTS instructor at Edupark Consultancy from 2018 to 2023.",
+      "I worked as an IELTS instructor at Edupark Consultancy from 2018 to 2023. I have developed strong communication and problem-solving skills while working as an IELTS instructor.",
       "In between, I also worked part time in the Admissions Overseas, Education, and Migration Corner.",
       "But after four  years of employment, I made the decision to quit since the work became repetative. Additionally, I had already begun studying web development and dedicated my entire attention to it.",
     ],
@@ -129,7 +129,7 @@ export const experiencesData = [
     date: "August 2022 (duration 6 months)",
     heading: "Education And Migration Corner",
     expList: [
-      "Leveraged strong communication and interpersonal skills to provide academic guidance to students.",
+      "Leveraged strong communication and interpersonal skills to effectively counsel 30+ students, leading around 12 to successful outcomes.",
       "While I enjoyed this role and the opportunity to support students, I was seeking a position that offered a clear path for professional development and growth.",
     ],
   },
