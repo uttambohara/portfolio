@@ -109,9 +109,9 @@ export const experiencesData = [
   {
     id: 0,
     date: "2019 to February 2023",
-    heading: "IELTS Instructor",
+    heading: "IELTS Instructor - Edupark Asia",
     expList: [
-      "Worked as an IELTS instructor at Edupark Consultancy (2018-2023), developing strong communication and problem-solving skills.",
+      "Worked as an IELTS instructor at Edupark Asia Consultancy (2018-2023), developing strong communication and problem-solving skills.",
       "I also gained valuable experience in admissions, overseas education, and migration services. This experience motivated me to pursue web development for a more engaging career.",
     ],
   },
@@ -126,7 +126,7 @@ export const experiencesData = [
   {
     id: 3,
     date: "August 2022 (duration 6 months)",
-    heading: "Education And Migration Corner",
+    heading: "Counselor - Education And Migration Corner",
     expList: [
       "Leveraged strong communication and interpersonal skills to effectively counsel 30+ students, leading around 12 to successful outcomes.",
       "While I enjoyed this role and the opportunity to support students, I was seeking a position that offered a clear path for professional development and growth.",
