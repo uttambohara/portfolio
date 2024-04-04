@@ -42,7 +42,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="https://docs.google.com/document/d/1ZBI36wEEeeJnOlX89aGq17eDBVFmxFuaZOugnv7qMf4/edit#heading=h.le7oimcbka0a"
+              href="https://utfs.io/f/90bbeaae-0280-46b7-ad39-f909350a492e-h4h8gv.pdf"
               target="_blank"
             >
               <Button
