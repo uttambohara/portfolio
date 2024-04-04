@@ -41,7 +41,7 @@ export default function About() {
 
               <p>
                 I started with python but the visual aspect of Javasript allured
-                me. I learning JS by cobbling resources online and through
+                me. I learned JS by cobbling resources online and through
                 documentaton. Today, I specialize in NextJs, React, NodeJS,
                 Prisma, and Typescript. And I am keen on learning new
                 technologies.
