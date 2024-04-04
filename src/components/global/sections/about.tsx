@@ -35,8 +35,8 @@ export default function About() {
               <p>
                 I am Uttam Bohara, an MBA graduate, who decided to pursue my
                 passion for programming. I realized that I did not have
-                techinical skills, and I have always wanted to learn
-                programming. Therefore, I gave it a go.
+                technical skills, and I have always wanted to learn programming.
+                Therefore, I gave it a go.
               </p>
 
               <p>

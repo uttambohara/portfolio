@@ -98,18 +98,35 @@ export const NavigationItem = [
 
 export const experiencesData = [
   {
+    id: 1,
+    date: "November 2022 to Today",
+    heading: "JavaScript",
+    expList: [
+      "The visual nature of HTML, CSS, JS, and SASS drew me in, and I began learning these languages. I longed  to become proficient in web programming, so I studied Typescript, React, Nextjs, and Nodejs.",
+      "My experience with Python provided a strong programming foundation. ",
+    ],
+  },
+  {
     id: 0,
-    date: "Upto february 2023",
+    date: "2019 to February 2023",
     heading: "IELTS Instructor",
     expList: [
       "I worked as an IELTS instructor at Edupark Consultancy from 2018 to 2023.",
       "In between, I also worked part time in the Admissions Overseas, Education, and Migration Corner.",
-      "But after four or five years of employment, I made the decision to quit since the work became repetative. Additionally, I had already begun studying web development and dedicated my entire attention to it.",
+      "But after four  years of employment, I made the decision to quit since the work became repetative. Additionally, I had already begun studying web development and dedicated my entire attention to it.",
     ],
   },
   {
-    id: 1,
-    date: "August 2022",
+    id: 2,
+    date: "Feb 2022 (duration 3 month)",
+    heading: "Python",
+    expList: [
+      "Initially I started with python. I learned basic syntax, created blackJack game, learned about palindrome, GUI.",
+    ],
+  },
+  {
+    id: 3,
+    date: "August 2022 (duration 6 months)",
     heading: "Education And Migration Corner",
     expList: [
       "Leveraged strong communication and interpersonal skills to provide academic guidance to students.",
